@@ -187,6 +187,37 @@
   </div>
 </footer>
 
+<div class="chat-widget" id="chatWidget">
+  <button class="chat-toggle" id="chatToggle" aria-label="Ouvrir l'assistant Devantio">
+    <span id="chatToggleIcon">💬</span>
+  </button>
+
+  <div class="chat-panel" id="chatPanel" hidden>
+    <div class="chat-header">
+      <div>
+        <strong>Assistant Devantio</strong>
+        <span class="chat-sub">Répond à vos questions fréquentes</span>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Fermer l'assistant">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="chat-quick" id="chatQuick">
+      <button type="button" class="chip">Quels services ?</button>
+      <button type="button" class="chip">Combien ça coûte ?</button>
+      <button type="button" class="chip">Combien de temps ?</button>
+      <button type="button" class="chip">Comment vous contacter ?</button>
+    </div>
+
+    <form class="chat-input-row" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Écrivez votre question..." autocomplete="off">
+      <button type="submit" aria-label="Envoyer">➤</button>
+    </form>
+  </div>
+</div>
+
 <script src="script.js"></script>
+<script src="chat-assistant.js"></script>
 </body>
 </html>
