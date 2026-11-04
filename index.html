@@ -8,6 +8,8 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Pas de JS tiers ni de tracking : juste une petite animation d'apparition au scroll (script.js) -->
 <body>
 
 <header class="nav">
@@ -26,27 +28,74 @@
 
 <section class="hero">
   <div class="container hero-inner">
-    <h1>Votre commerce mérite d'être trouvé en ligne.</h1>
-    <p class="hero-sub">Sites web, menus QR codes et réseaux sociaux — pensés pour les commerces locaux, créés par une équipe de Fribourg.</p>
-    <a href="#contact" class="btn btn-primary btn-lg">Demander un devis gratuit</a>
+    <h1 class="reveal">Votre commerce mérite d'être trouvé en ligne.</h1>
+    <p class="hero-sub reveal">Sites web, menus QR codes et réseaux sociaux — pensés pour les commerces locaux, créés par une équipe de Fribourg.</p>
+    <div class="badges reveal">
+      <span class="badge">📍 Fribourg, Suisse</span>
+      <span class="badge">🎓 Équipe EMF</span>
+      <span class="badge">⚡ Réponse sous 24h</span>
+    </div>
+    <a href="#contact" class="btn btn-primary btn-lg reveal">Demander un devis gratuit</a>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4338CA"/>
+            <stop offset="100%" stop-color="#7C6AF0"/>
+          </linearGradient>
+        </defs>
+
+        <rect x="60" y="30" width="300" height="200" rx="14" fill="#11152B" stroke="rgba(255,255,255,0.1)"/>
+        <circle cx="80" cy="48" r="4" fill="#F97066"/>
+        <circle cx="94" cy="48" r="4" fill="#F4C430"/>
+        <circle cx="108" cy="48" r="4" fill="#4ADE80"/>
+        <rect x="130" y="43" width="150" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+
+        <rect x="84" y="78" width="160" height="10" rx="5" fill="rgba(245,246,250,0.35)"/>
+        <rect x="84" y="96" width="220" height="7" rx="3.5" fill="rgba(245,246,250,0.18)"/>
+        <rect x="84" y="110" width="180" height="7" rx="3.5" fill="rgba(245,246,250,0.18)"/>
+
+        <rect x="84" y="134" width="252" height="66" rx="10" fill="url(#heroGrad)"/>
+
+        <rect x="84" y="212" width="90" height="26" rx="13" fill="#4338CA"/>
+
+        <g transform="translate(300,180)">
+          <rect x="0" y="0" width="70" height="70" rx="12" fill="#0B0E1A" stroke="rgba(255,255,255,0.15)"/>
+          <g fill="#F5F6FA">
+            <rect x="12" y="12" width="14" height="14" rx="2"/>
+            <rect x="44" y="12" width="14" height="14" rx="2"/>
+            <rect x="12" y="44" width="14" height="14" rx="2"/>
+            <rect x="32" y="32" width="8" height="8" rx="1"/>
+            <rect x="44" y="44" width="8" height="8" rx="1"/>
+            <rect x="32" y="48" width="8" height="8" rx="1"/>
+          </g>
+        </g>
+
+        <g transform="translate(24,150)">
+          <rect x="0" y="0" width="64" height="64" rx="16" fill="#11152B" stroke="rgba(255,255,255,0.15)"/>
+          <path d="M32 44c8-6 14-11 14-18a8 8 0 0 0-14-5 8 8 0 0 0-14 5c0 7 6 12 14 18z" fill="#F97066"/>
+        </g>
+      </svg>
+    </div>
   </div>
 </section>
 
 <section id="services" class="section">
   <div class="container">
-    <h2>Ce qu'on propose</h2>
+    <h2 class="reveal">Ce qu'on propose</h2>
     <div class="cards">
-      <div class="card">
+      <div class="card reveal">
         <div class="card-icon">🌐</div>
         <h3>Site web vitrine</h3>
         <p>Une page claire avec vos horaires, vos photos, vos coordonnées — prête en quelques jours.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <div class="card-icon">📱</div>
         <h3>Menu QR code</h3>
         <p>Votre carte accessible par simple scan, modifiable en quelques clics quand vos prix changent.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <div class="card-icon">📈</div>
         <h3>Réseaux sociaux</h3>
         <p>Un coup de pouce pour lancer ou relancer votre présence Instagram / Facebook.</p>
@@ -55,19 +104,42 @@
   </div>
 </section>
 
+<section id="comment" class="section">
+  <div class="container">
+    <h2 class="reveal">Comment ça marche</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>On discute</h3>
+        <p>Vous nous dites ce qu'il vous faut, on vous propose une solution simple et un prix clair.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>On crée</h3>
+        <p>Votre site, QR code ou contenu réseaux sociaux prend forme en quelques jours.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Vous êtes en ligne</h3>
+        <p>On vous forme en 5 minutes si besoin, et on reste disponibles pour les ajustements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="pourquoi" class="section section-alt">
   <div class="container">
-    <h2>Pourquoi Devantio</h2>
+    <h2 class="reveal">Pourquoi Devantio</h2>
     <div class="cards">
-      <div class="card">
+      <div class="card reveal">
         <h3>Rapide</h3>
         <p>Votre présence en ligne livrée en quelques jours, pas en quelques mois.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>Accessible</h3>
         <p>Des tarifs pensés pour les petits commerces, sans frais cachés.</p>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <h3>Local</h3>
         <p>Une équipe basée à Fribourg, qui comprend votre clientèle.</p>
       </div>
@@ -104,5 +176,6 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
