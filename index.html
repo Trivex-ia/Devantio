@@ -79,7 +79,21 @@
   <div class="container">
     <h2>Parlons de votre projet</h2>
     <p>Écrivez-nous, on revient vers vous rapidement avec une proposition adaptée à votre commerce.</p>
-    <a href="mailto:contact@devantio.ch" class="btn btn-primary btn-lg">contact@devantio.ch</a>
+
+    <form class="contact-form" action="https://formsubmit.co/REMPLACE_PAR_TON_EMAIL@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nouveau message depuis le site Devantio">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <input type="text" name="Nom" placeholder="Votre nom" required>
+        <input type="email" name="Email" placeholder="Votre email" required>
+      </div>
+      <textarea name="Message" placeholder="Décrivez votre commerce et ce dont vous avez besoin..." rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+    </form>
+
+    <p class="contact-alt">Ou directement par email : <a href="mailto:contact@devantio.ch">contact@devantio.ch</a></p>
   </div>
 </section>
 
