@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trivex-ia.github.io/Devantio/sitemap.xml
